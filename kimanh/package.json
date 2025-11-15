@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.5",
+    "axios": "^1.12.2",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.548.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.23.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

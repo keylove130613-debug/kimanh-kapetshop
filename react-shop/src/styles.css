@@ -1,0 +1,411 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.navbar {
+  background: #003c65;
+  color: white;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th, .table td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.search-box {
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  padding: 5px;
+  width: 200px;
+}
+
+
+.error {
+  color: red;
+}
+
+
+
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+
+button {
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 2px solid; 
+  background-color: transparent; 
+  color: inherit; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:nth-child(1) {
+  border-color: #28a745; /* Xem */
+  color: #28a745;
+}
+button:nth-child(1):hover {
+  background-color: #28a745; 
+  color: white;             
+  border-color: #28a745;   
+}
+
+
+button:nth-child(2) {
+  border-color: #007bff; /* Sửa  */
+  color: #007bff;
+}
+button:nth-child(2):hover {
+  background-color: #007bff; 
+  color: white;             
+  border-color: #007bff;   
+}
+
+button:nth-child(3) {
+  border-color: #dc3545; /* Xóa */
+  color: #dc3545;
+}
+
+button:nth-child(3):hover {
+  background-color: #dc3545; 
+  color: white;            
+  border-color: #dc3545;   
+}
+
+
+.message {
+  color: green;
+  margin-bottom: 10px;
+}
+.styled-table tr:hover {
+  background-color: #f1f7ff;
+}
+
+
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+.sidebar {
+  width: 220px;
+  background: #00416d;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+
+.sidebar {
+  width: 220px;
+  background: #003050;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar li:hover {
+  background-color: #0066a2;
+}
+
+.sidebar li.active {
+  background-color: #007bff;
+}
+
+.content {
+  flex: 1;
+  padding: 20px 30px;
+}
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-container input,
+.search-container select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Container tìm kiếm */
+.search-container {
+  max-width: 400px;
+  margin: 20px auto 10px auto;
+  display: flex;
+  gap: 8px;
+}
+
+/* Input tìm kiếm */
+.search-container input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Nút tìm kiếm */
+.search-container button {
+  padding: 8px 16px;
+  border: 2px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.price-range-container {
+  display: flex;
+  gap: 10px; /* khoảng cách giữa 2 ô */
+  margin-bottom: 12px;
+}
+
+.price-range-container input {
+  flex: 1; /* 2 ô đều nhau */
+  padding: 8px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.price-range-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+.login-container {
+  width: 320px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 16px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-container button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: red;
+}
+/* ======================= */
+/* 💠 FORM THÊM DANH MỤC  */
+/* ======================= */
+.category-form {
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.category-form h3 {
+  margin-bottom: 15px;
+  color: #003050;
+  font-size: 18px;
+  border-left: 4px solid #007bff;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.category-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-form input,
+.category-form select {
+  padding: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.category-form input:focus,
+.category-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.category-form button {
+  align-self: flex-end;
+  padding: 8px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ======================= */
+/* 💎 TỐI ƯU CHUNG BẢNG   */
+/* ======================= */
+.styled-table tr:hover {
+  background-color: #eef6ff;
+  transition: 0.2s;
+}
+
+.styled-table td,
+.styled-table th {
+  vertical-align: middle;
+}
+
+/* Giữ container gọn gàng */
+.container h2 {
+  color: #003050;
+  margin-bottom: 15px;
+}
+
+/* Thông báo lỗi và thành công */
+.error {
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.message {
+  color: #28a745;
+  margin-bottom: 10px;
+}
